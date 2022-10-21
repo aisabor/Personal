@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --clr--primary-300: #3D8F3C;
+  --clr--primary-400: #131414;
+  --clr--primary-500: #e1e7e7;
+  --clr--primary-600: #ffffff ;
+}
+
+body{
+  font-family: 'Noto Serif Gujarati', serif;
+
+}
+
+.header p{
+  font-size: 2vh;
+  color: white;
+}
+
+.header{
+  margin: 10px;
+  padding: 50px;
+  box-shadow: 5px 10px 18px var(--clr--primary-500) ;
+  border-radius: 3em 1em 5em / 0.9em 2em;
+  color: var(--clr--primary-300);
+  background-color: var(--clr--primary-400);
+}
+h1, h2, h3{
+  color: var(--clr--primary-300);
+  text-decoration: line-through;
+  align-items: center;
+  text-align: center;
+}
+.contact{
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  padding: 20px;
+}
+
+.nav-list{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+}
+
+.fa-solid, .fa-circle-info{
+color: var(--clr--primary-600);
+font-size: 2vh;
+}
+
+.colored{
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+
+}
+ul li a{
+
+  margin: 10px;
+  text-decoration: none;
+  font-size: 2vh;
+  color: var(--clr--primary-600);
+}
+.one{
+  align-items: center;
+  text-align: center;
+  display: column;
+  width: 100%;
+  
+}
+
+.two p{
+  font-family: 'Satisfy', cursive;
+  font-size: 4vh;
+  color: var(--clr--primary-500);
+  margin-top: 10px;
+  text-shadow: 2px 2px var(--clr--primary-400);
+  position: relative;
+  animation-name: bang;
+  animation-duration: 5s;
+}
+
+@keyframes bang {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  border-radius: 80px 20px 30px 30px; 
+}
+
+.two,img{
+  font-size: 9vh;
+  text-align: center;
+  align-items: center;
+}
+
+#panel, #pan, #pane {
+  padding: 50px;
+  display: none;
+}
+
+
+#flip, #flipother, #flipthird {
+  background-color: #171a0e;
+  border: solid 10px black;
+  padding: 10px;
+  width: 30vw;
+  color: white;
+  height: 10vh;
+  font-family: 'Noto Serif Gujarati', serif;
+  border-radius: 3em 1em 5em / 0.9em 2em;
+  cursor: pointer;  
+}
+.one b{
+  align-items: center;
+  text-align: center;
+}
+.bottom{
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+  background-color: #131414;
+  border-radius: 3em 1em 5em / 0.9em 2em;
+  
+}
+
+.ilinks{
+  color: white;
+  font-size: 10vh;
+  cursor: pointer;    
+}
+.ilinks p{
+  font-size: 2vh;
+}
