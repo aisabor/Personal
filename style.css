@@ -12,12 +12,20 @@
 
 body{
   font-family: 'Noto Serif Gujarati', serif;
-
+  }
+  
+#myVideo {
+  position: fixed;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
 }
 
 .header p{
   font-size: 2vh;
-  color: white;
+  color: #3D8F3C;
 }
 
 .header{
@@ -111,8 +119,8 @@ img{
 
 
 #flip, #flipother, #flipthird {
-  background-color: #171a0e;
-  border: solid 10px black;
+  background-color: #3D8F3C;
+  border: solid 10px white;
   padding: 10px;
   width: 30vw;
   color: white;
@@ -124,6 +132,7 @@ img{
 .one b{
   align-items: center;
   text-align: center;
+  color: white;
 }
 .bottom{
   margin: 10px;
