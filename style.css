@@ -1,155 +1,235 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Shalimar';
 }
 
 :root{
-  --clr--primary-300: #3D8F3C;
+  --clr--primary-300: #354646;
   --clr--primary-400: #131414;
   --clr--primary-500: #e1e7e7;
   --clr--primary-600: #ffffff ;
 }
 
 body{
-  font-family: 'Noto Serif Gujarati', serif;
+  background-color: #354646;
   }
   
-#myVideo {
-  position: fixed;
-  z-index: -1;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+  }
+
+
+ul li a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
 }
 
-.header p{
-  font-size: 2vh;
-  color: #3D8F3C;
-}
+  .button-49,.button-48,.button-49:after, .button-48:after {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 76px;
+    line-height: 78px;
+    font-size: 2vh;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #131414 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 
-.header{
+  }
+  
+  .button-49:after, .button-48:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AISABOR';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #131414 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  .button-49:hover:after, .button-48:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .button-49 ,.button-48,
+    .button-49:after,.button-48:after {
+      width: 200px;
+      height: 86px;
+      line-height: 88px;
+    }
+  }
+  
+
+  p{
+    font-size: 3vh;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .waviy {
+    color: white;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+.nav-list{
+display: flex;
+justify-content: center;
+     
+ }
+
+ .nav-list div{
+  color: white;
+  font-size: 4vh;
   margin: 10px;
-  padding: 50px;
-  box-shadow: 5px 10px 18px var(--clr--primary-500) ;
-  border-radius: 3em 1em 5em / 0.9em 2em;
-  color: var(--clr--primary-300);
-  background-color: var(--clr--primary-400);
-}
+  
+ }
+
+
 h1, h2, h3{
   color: var(--clr--primary-300);
   text-decoration: line-through;
   align-items: center;
   text-align: center;
 }
-.contact{
-  align-items: center;
-  text-align: center;
-  margin: 50px;
-  padding: 20px;
-}
-
-.nav-list{
- display: flex;
- flex-wrap: wrap;
- align-items: center;
- justify-content: center;
-}
-
-.fa-solid, .fa-circle-info{
-color: var(--clr--primary-600);
-font-size: 2vh;
-}
-
-.colored{
-  color: black;
-}
-
-ul{
-  list-style-type: none;
-
-}
-ul li a{
-
-  margin: 10px;
-  text-decoration: none;
-  font-size: 2vh;
-  color: var(--clr--primary-600);
-}
-.one{
-  align-items: center;
-  text-align: center;
-  display: column;
-  width: 100%;
-  
-}
-
-.two p{
-  font-family: 'Satisfy', cursive;
-  font-size: 4vh;
-  color: var(--clr--primary-500);
-  margin-top: 10px;
-  text-shadow: 2px 2px var(--clr--primary-400);
-  position: relative;
-  animation-name: bang;
-  animation-duration: 5s;
-}
-
-@keyframes bang {
-  from {top: 0px;}
-  to {top: 200px;}
-}
 
 img{
   height: 150px;
   width: 150px;
-  border-radius: 80px 20px 30px 30px; 
+  border-radius: 50% 50% 50% 50%; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  position: relative;
 }
 
-.two,img{
-  font-size: 9vh;
-  text-align: center;
-  align-items: center;
+ b{
+  color: white;
+  font-size: 7vh;
 }
 
-#panel, #pan, #pane {
+section{
+  background-color: black;
+}
+
+#panel, p{
+  color: white;
+  border-radius: 3em 1em 5em / 0.9em 2em;
+  margin: 10px;
+  padding: 50px;
+  }
+
+#panel{
   padding: 50px;
   display: none;
 }
 
+#flip{
+  background-color: black;
+  color: white;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 50% 50% 50% 50%;
 
-#flip, #flipother, #flipthird {
-  background-color: #3D8F3C;
-  border: solid 10px white;
-  padding: 10px;
-  width: 30vw;
-  color: white;
-  height: 10vh;
-  font-family: 'Noto Serif Gujarati', serif;
-  border-radius: 3em 1em 5em / 0.9em 2em;
-  cursor: pointer;  
-}
-.one b{
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-.bottom{
-  margin: 10px;
-  margin-bottom: 30px;
-  padding: 50px;
-  align-items: center;
-  text-align: center;
-  background-color: #131414;
-  border-radius: 3em 1em 5em / 0.9em 2em;
-  
-}
+  }
 
 .ilinks{
   color: white;
   font-size: 10vh;
-  cursor: pointer;    
+  cursor: pointer;
+  padding: 130px;
 }
 .ilinks p{
   font-size: 2vh;
+}
+
+.bottom{
+  align-items: center;
+  text-align: center;
 }

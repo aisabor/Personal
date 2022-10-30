@@ -6,14 +6,4 @@ $(document).ready(function(){
     });
   });
 
-  $(document).ready(function(){
-    $("#flipother").click(function(){
-      $("#pan").slideToggle("slow");
-    });
-  });
-
-  $(document).ready(function(){
-    $("#flipthird").click(function(){
-      $("#pane").slideToggle("slow");
-    });
-  });
+ 
