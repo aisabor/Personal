@@ -49,6 +49,8 @@ li{
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    box-shadow: 5px 0px #ffffff;
+
 
   }
   
@@ -159,8 +161,10 @@ li{
 
 .nav-list{
 display: flex;
-justify-content: center;
-     
+justify-content: center;  
+color: white;
+margin: 50px;
+font-size: 40px;
  }
 
  .nav-list div{
@@ -170,6 +174,10 @@ justify-content: center;
   
  }
 
+ i ul li a{
+  margin: 30px;
+  background-color: #00e000;
+ }
 
 h1, h2, h3{
   color: var(--clr--primary-300);
@@ -216,14 +224,15 @@ section{
   margin: 50px;
   padding: 40px;
   border-radius: 50% 50% 50% 50%;
-
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 5px #ffffff;
   }
 
 .ilinks{
   color: white;
-  font-size: 10vh;
+  font-size: 3vh;
   cursor: pointer;
-  padding: 130px;
+  padding: 30px;
 }
 .ilinks p{
   font-size: 2vh;
@@ -232,4 +241,12 @@ section{
 .bottom{
   align-items: center;
   text-align: center;
+}
+
+.contact{
+  font-size: 4vh;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 20px;
 }
