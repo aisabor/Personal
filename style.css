@@ -135,9 +135,17 @@ li{
     }
   }
   
+h1, h2, h3{
+  color: black;
+  font-size: 4vh;
 
+}
+
+a{
+  font-size: 2vh;
+}
   p{
-    font-size: 3vh;
+    font-size: 4vh;
     color: white;
     font-weight: bolder;
   }
@@ -174,17 +182,6 @@ font-size: 40px;
   
  }
 
- i ul li a{
-  margin: 30px;
-  background-color: #00e000;
- }
-
-h1, h2, h3{
-  color: var(--clr--primary-300);
-  text-decoration: line-through;
-  align-items: center;
-  text-align: center;
-}
 
 img{
   height: 150px;
@@ -197,10 +194,6 @@ img{
   position: relative;
 }
 
- b{
-  color: white;
-  font-size: 7vh;
-}
 
 section{
   background-color: black;
@@ -249,4 +242,13 @@ section{
   text-align: center;
   color: white;
   margin: 20px;
+}
+
+.top-caase{
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin: 10px;
+
 }
